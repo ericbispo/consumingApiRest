@@ -1,0 +1,24 @@
+<div>
+  <h1>Dados da API Rick and Morty</h1>
+
+  <hr>
+
+  <h2>Personagens</h2>
+  <ul *ngFor="let character of character">
+    <li>{{ character.name }} - Status: {{ character.status }} - Espécie: {{ character.species }}</li>
+  </ul>
+
+  <hr>
+
+  <h2>Episódios</h2>
+  <ul *ngFor="let episode of episode">
+    <li>{{ episode.name }} - Episódio: {{ episode.episode }} - Data de Lançamento: {{ episode.air_date }}</li>
+  </ul>
+
+  <hr>
+
+  <h2>Localizações</h2>
+  <ul *ngFor="let location of locatione">
+    <li>{{ location.name }} - Tipo: {{ location.type }} - Dimensão: {{ location.dimension }}</li>
+  </ul>
+</div>
